@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <div class="container">
+    <div class="title">Registrate aqui</div>
+    <div class="content">
+      <form (ngSubmit)="formSubmit()">
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Nombre de usuario</span>
+            <input
+            type="text" 
+            [(ngModel)]="user.username"
+            name="username"
+            placeholder="Digite su nombre de usuario" 
+            required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Contraseña</span>
+            <input 
+            type="password" 
+            name="password"
+            [(ngModel)]="user.password"
+            placeholder="Digite su contraseña" 
+            required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Nombre</span>
+            <input 
+            type="text" 
+            [(ngModel)]="user.nombre"
+            name="nombre"
+            placeholder="Digite su nombre" 
+            required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Apellido</span>
+            <input 
+            type="text"
+            [(ngModel)]="user.apellido"
+            name="apellido" 
+            placeholder="Digite su apellido" 
+            required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input 
+            type="email"
+            [(ngModel)]="user.email"
+            name="email" 
+            placeholder="Digite su email" 
+            required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Telefono</span>
+            <input             
+            [(ngModel)]="user.telefono"
+            name="telefono" 
+            placeholder="Digite su telefono" 
+            required>
+          </div>
+        </div>
+
+       
+        <div class="button">
+          <input type="submit" value="Registrar">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,1 +1,2 @@
-# Formulario_Registro_Validado
+# ResponsiveRegistrationForm
+Responsive registration form with HTML and CSS
